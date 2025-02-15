@@ -1,14 +1,9 @@
 import "../css/Favorites.css";
 import { useMovieContext } from "../contexts/MovieContext";
 import MovieCard from "../components/MovieCard";
-import { useEffect } from "react";
 
 const Favorites = () => {
   const { favorites } = useMovieContext();
-
-  useEffect(() => {
-    console.log(favorites)
-  }, [])
 
   if (favorites.length > 0) {
     return (
