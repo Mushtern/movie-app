@@ -58,9 +58,6 @@ const Home = () => {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />
-          <button type="submit" className="search-button">
-            Search
-          </button>
         </form>
         {error && <div className="error-message">{error}</div>}
         {loading ? (
